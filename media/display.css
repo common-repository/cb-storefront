@@ -1,0 +1,464 @@
+/* This stylesheet is used to style the public view of the plugin. */
+
+/****************************************
+	CSS 3 SEARCH FORM BY CAMERON BANEY
+    Design Blog: http://blog.cameronbaney.com 
+	Twitter: @cameronbaney
+****************************************/
+
+#cb_search #cb-search-form {
+	background: #e1e1e1; /* Fallback color for non-css3 browsers */
+	width: 365px;
+	
+	/* Gradients */
+	background: -webkit-gradient( linear,left top, left bottom, color-stop(0, rgb(243,243,243)), color-stop(1, rgb(225,225,225)));
+	background: -moz-linear-gradient( center top, rgb(243,243,243) 0%, rgb(225,225,225) 100%);
+	
+	/* Rounded Corners */
+	border-radius: 17px; 
+	-webkit-border-radius: 17px;
+	-moz-border-radius: 17px;
+	
+	/* Shadows */
+	box-shadow: 1px 1px 2px rgba(0,0,0,.3), 0 0 2px rgba(0,0,0,.3); 
+	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.3), 0 0 2px rgba(0,0,0,.3);
+	-moz-box-shadow: 1px 1px 2px rgba(0,0,0,.3), 0 0 2px rgba(0,0,0,.3);
+}
+
+/*** TEXT BOX ***/
+#cb_search input[type="text"]{
+	background: #fafafa; /* Fallback color for non-css3 browsers */
+	
+	/* Gradients */
+	background: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(250,250,250)), color-stop(1, rgb(230,230,230)));
+	background: -moz-linear-gradient( center top, rgb(250,250,250) 0%, rgb(230,230,230) 100%);
+	
+	border: 0;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid rgba(255,255,255,.8);
+	font-size: 16px;
+	margin: 4px;
+	padding: 5px;
+	width: 250px;
+	
+	/* Rounded Corners */
+	border-radius: 17px; 
+	-webkit-border-radius: 17px;
+	-moz-border-radius: 17px;
+	
+	/* Shadows */
+	box-shadow: -1px -1px 2px rgba(0,0,0,.3), 0 0 1px rgba(0,0,0,.2);
+	-webkit-box-shadow: -1px -1px 2px rgba(0,0,0,.3), 0 0 1px rgba(0,0,0,.2);
+	-moz-box-shadow: -1px -1px 2px rgba(0,0,0,.3), 0 0 1px rgba(0,0,0,.2);
+}
+
+/*** USER IS FOCUSED ON TEXT BOX ***/
+#cb_search input[type="text"]:focus{
+	outline: none;
+	background: #fff; /* Fallback color for non-css3 browsers */
+	
+	/* Gradients */
+	background: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(255,255,255)), color-stop(1, rgb(235,235,235)));
+	background: -moz-linear-gradient( center top, rgb(255,255,255) 0%, rgb(235,235,235) 100%);
+}
+
+/*** SEARCH BUTTON ***/
+#cb_search input[type="submit"]{
+	background: #44921f;/* Fallback color for non-css3 browsers */
+	
+	/* Gradients */
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0, rgb(79,188,32)), color-stop(0.15, rgb(73,157,34)), color-stop(0.88, rgb(62,135,28)), color-stop(1, rgb(49,114,21)));
+	background: -moz-linear-gradient( center top, rgb(79,188,32) 0%, rgb(73,157,34) 15%, rgb(62,135,28) 88%, rgb(49,114,21) 100%);
+	
+	border: 0;
+	color: #eee;
+	cursor: pointer;
+	float: right;
+	font: 16px Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	height: 30px;
+	margin: 4px 4px 0;
+	text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+	width: 84px;
+	outline: none;
+	
+	/* Rounded Corners */
+	border-radius: 30px; 
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	
+	/* Shadows 
+	box-shadow: -1px -1px 1px rgba(255,255,255,.5), 1px 1px 0 rgba(0,0,0,.4);
+	-moz-box-shadow: -1px -1px 1px rgba(255,255,255,.5), 1px 1px 0 rgba(0,0,0,.2);
+	-webkit-box-shadow: -1px -1px 1px rgba(255,255,255,.5), 1px 1px 0 rgba(0,0,0,.4);
+
+	*/
+}
+/*** SEARCH BUTTON HOVER ***/
+#cb_search input[type="submit"]:hover {
+	background: #4ea923; /* Fallback color for non-css3 browsers */
+	
+	/* Gradients */
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0, rgb(89,222,27)), color-stop(0.15, rgb(83,179,38)), color-stop(0.8, rgb(66,143,27)), color-stop(1, rgb(54,120,22)));
+	background: -moz-linear-gradient( center top, rgb(89,222,27) 0%, rgb(83,179,38) 15%, rgb(66,143,27) 80%, rgb(54,120,22) 100%);
+}
+#cb_search input[type="submit"]:active {
+	background: #4ea923; /* Fallback color for non-css3 browsers */
+	
+	/* Gradients */
+	background: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(89,222,27)), color-stop(0.15, rgb(83,179,38)), color-stop(0.8, rgb(66,143,27)), color-stop(1, rgb(54,120,22)));
+	background: -moz-linear-gradient( center bottom, rgb(89,222,27) 0%, rgb(83,179,38) 15%, rgb(66,143,27) 80%, rgb(54,120,22) 100%);
+}
+
+
+
+
+
+.cbenginelogo {
+	margin: 30px 10px 30px 0px !important;
+	display: block !important;
+	width: 127px !important;
+	height: 29px !important;
+	background-image: url('cbengine.jpg') !important;
+	background-position: top left !important;
+	background-repeat: no-repeat !important;
+}
+.cbenginelogo span {
+	display: none !important;
+}
+
+
+
+#store {
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding: 0px;
+}
+
+#store a { 
+	color: #2765AB; 
+	font-size: 9pt;
+}
+#store a:link { 
+	color: #2765AB; 
+}
+#store a:visited { 
+	color: #2765AB; 
+}
+#store a:hover { 
+	color: #ff5500;
+}
+#store a img { 
+	border-width: 0;
+}
+
+#store form {
+	margin: 0px;
+}
+
+
+
+
+/*** Header ***/
+
+#store .storeheader {
+	clear: both;
+	height: 1%;
+	background: #ffffff;
+	padding: 0 0px 0px 0px;
+}
+#store .storename {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+#store .storename a {
+	text-decoration: none;
+}
+#store .storename h1 {
+	font-family: Trebuchet MS, Trebuchet, Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 2.5em;
+	text-align: left;
+	color: #ff5500;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*** Categories ***/
+
+#store .storecats {
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#store .storecats .category {
+	padding-bottom: 10px;
+}
+#store .storecats li a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+#store .storecats .sep {
+	margin: 1px 0px 12px 30px;
+
+	line-height: 20px;
+}
+#store .storecats .sep a {
+	font-weight: normal;
+	text-decoration: underline !important;
+}
+#store .storecats h4 { 
+	margin: 0px;
+}
+#store .storecats h4 a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	margin: 0px;
+}
+
+
+#store .storecats ol {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 10px;
+}
+#store .storecats ol li {
+	list-style: none;
+}
+
+
+
+
+
+/*** Footer ***/
+
+#store .storefooter {
+	background-color: #005DAA !important;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #fff !important;
+	padding: 6px 10px 7px 10px;
+	text-align: left;
+	clear: both;
+	height: 1%;	
+}
+
+
+#store .storefooter a {
+	color: #A84C00;
+	color: #fff !important;
+	font-size: 11px;
+}
+#store .storefooter .cbengine {
+	float: right;
+	cursor: pointer;
+}
+#store .storefooter .cbengine a {
+	text-decoration: none;
+}
+#store .storefooter .cbengine span {
+	font-weight: bold;
+}
+
+#store .storefooter a.cbs_back {
+	color: #fff !important;
+	font-size: 13px;
+	text-align: left;
+	float: left;
+	text-decoration: underline !important;
+}
+
+
+
+/*** Store Product Results ***/
+
+
+#store .storeItems {
+	text-align: left;
+	min-height: 200px; 
+	height:auto;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 20px 0px;
+}
+* html #store .storeItems {
+	height: 200px; 
+}
+
+
+#store .storeItems h2.channelname {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+#store .storeItems h2.channelname a {
+	font-size: 16px;
+	color: #000000 !important;
+	text-decoration: underline;
+}
+
+#store .storeItems #products ol {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 10px;
+}
+#store .storeItems #products ol li {
+	list-style: none;
+}
+
+
+#store .storeItems .item {
+	font-size: 13px;
+	padding: 0 0 15px 0;
+}
+#store .storeItems .itemtitle a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+}
+#store .storeItems .itemdescription {
+	font-size: 12px;
+	line-height: 18px;
+	padding-left: 0px;
+	display: block;
+}
+
+
+/*** Store Paged Nav ***/
+
+#store .storeItems .nextn {
+
+	text-align: left;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	padding: 10px 10px 10px 0;
+}
+#store .storeItems .nextn a {
+	font-size: 13px;
+	font-weight: normal;
+	color: #2765AB !important;
+	padding: 2px 5px 2px 5px;
+	background-color: #eee;
+	border: 1px solid #ccc;
+	text-decoration: none;
+}
+
+#store .storeItems a.currpage {
+	color: #ffffff !important;
+	background-color: #4D79FF !important;
+	padding-right: 5px;
+	border: 1px solid #4D79FF !important;
+}
+
+#store .storeItems .nextn a:link {
+	color: #000000 !important;
+}
+#store .storeItems .nextn a:visited {
+	color: #000000 !important;
+}
+#store .storeItems .nextn a:hover {
+	color: #000000 !important;
+}
+
+#store .storeItems .total {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 5px 5px 15px 0px;
+}
+#store .storeItems .total a {
+	font-size: 16px;
+	color: #000000 !important;
+	text-decoration: underline;
+}
+
+
+
+/*** category_layout2.php ***/
+
+.maincats table {
+	margin: 0px auto;
+	text-align: center;
+	border: 0px dotted #ccc;
+}
+
+.maincats div.label {
+	text-align: center;
+	margin-bottom: 20px;
+	color: #222222;
+}
+.maincats div.label h3 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 1em;
+	font-weight: bold;
+}
+.maincats div.label span {
+	margin: 0px;
+	font-size: .8em;
+	font-weight: normal;
+}
+.maincats td  {
+	padding: 5px 10px 5px 10px;
+
+	border-right: 1px dotted #ccc;
+	vertical-align: top;
+	text-align: left;
+	width: 220px;
+}
+.maincats td.last  {
+	padding-right: 0px;
+	border-width: 0px;
+	border-bottom: 1px dotted #fff;
+}
+.maincats .top {
+	padding: 5px 10px 5px 10px;
+	border-bottom: 1px dotted #fff;
+	white-space: nowrap;
+	background: #DCE9F2;
+}
+.maincats a {
+	text-decoration: none;
+	padding: 1px 0px;
+	font-weight: bold;
+	font-size: 14px !important;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.maincats a.more {
+	float: right;
+	text-decoration: underline;
+	font-weight: normal;
+	font-size: 11px !important;
+}
+.maincats ol {
+	margin: 10px 0px 0px 0px;
+	padding: 0px 0px 10px 0px;
+	text-align: left;
+}
+.maincats ol a {
+	display: block;
+	font-weight: normal;
+	font-size: 13px !important;
+	padding-left: 10px;
+}
+.maincats ol a:hover {
+	color: #ffffff !important;
+	background: #3C8AD5;
+}
+
+.maincats ol li {
+	list-style: none;
+}
+
